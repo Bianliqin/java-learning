@@ -1,4 +1,4 @@
-package com.bianliqin.study;
+package com.bianliqin.study.week1;
 
 /**
  * @ClassName Factorial
