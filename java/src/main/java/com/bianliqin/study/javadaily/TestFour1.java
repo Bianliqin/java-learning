@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @Author huachengyu
  * @Date 2020/10/29
  **/
-public class Test4_1 {
+public class TestFour1 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in) ;
         String next = scanner.next();
