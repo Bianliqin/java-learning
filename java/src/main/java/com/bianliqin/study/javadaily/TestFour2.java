@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @Author huachengyu
  * @Date 2020/10/29
  **/
-public class Test4_2 {
+public class TestFour2 {
     public static void main(String[] args) {
         //1.键盘输入一个qq号码字符串
         Scanner sc = new Scanner(System.in);
@@ -20,7 +20,7 @@ public class Test4_2 {
         System.out.println("这个QQ号码是否正确:" + isOk);
     }
 
-    /**
+    /*
      *定义方法:checkQQ (String qq)方法内实现验证
      *指定方法的名称：checkQQ
      *指定方法的参数：String qq
@@ -41,7 +41,8 @@ public class Test4_2 {
             char ch = qq.charAt(i);
             //判断字符是否在数字字符'0'-'9'之间的字符
             if (ch < '0' || ch > '9') {
-                return false;//说明qq号码中含有非数字字符
+                //说明qq号码中含有非数字字符
+                return false;
             }
         }
         //4.上述验证都通过了，说明qq号码是正确的
