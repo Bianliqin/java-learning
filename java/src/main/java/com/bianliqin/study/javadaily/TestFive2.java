@@ -1,10 +1,10 @@
 package com.bianliqin.study.javadaily;
 
 /**
- * @ClassName TestFour10
+ * @ClassName TestFive2
  * @Description TODO
  * @Author huachengyu
- * @Date 2020/11/7
+ * @Date 2020/11/11
  **/
-public class TestFour10 {
+public class TestFive2 {
 }
