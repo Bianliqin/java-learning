@@ -1,10 +1,10 @@
 package com.liqinbian.sm.dao;
 
 /**
- * @ClassName DepartmentDao
+ * @ClassName DepartmentDaoTest
  * @Description TODO
  * @Author huachengyu
  * @Date 2020/11/18
  **/
-public interface DepartmentDao {
+public class DepartmentDaoTest {
 }
