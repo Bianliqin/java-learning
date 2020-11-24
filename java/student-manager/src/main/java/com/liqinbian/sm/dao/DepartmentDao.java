@@ -1,5 +1,10 @@
 package com.liqinbian.sm.dao;
 
+import com.liqinbian.sm.entity.Department;
+
+import java.sql.SQLException;
+import java.util.List;
+
 /**
  * @ClassName DepartmentDao
  * @Description TODO
@@ -7,4 +12,20 @@ package com.liqinbian.sm.dao;
  * @Date 2020/11/18
  **/
 public interface DepartmentDao {
+    /**
+     * 查询所有院系
+     *
+     * @return List<Department>
+     * @throws SQLException 异常
+     */
+    List<Department> getAll() throws SQLException;
+    int deleteDepartment(Department department,int id) throws SQLException;
+
+    /**
+     *
+     * @param department
+     * @return int
+     * @throws SQLException
+     */
+    int insertDepartment(Department department) throws SQLException;
 }
