@@ -1,8 +1,10 @@
 package com.liqinbian.sm.factory;
 
 import com.liqinbian.sm.service.AdminService;
+import com.liqinbian.sm.service.ClazzService;
 import com.liqinbian.sm.service.DepartmentService;
 import com.liqinbian.sm.service.impl.AdminServiceImpl;
+import com.liqinbian.sm.service.impl.ClazzServiceImpl;
 import com.liqinbian.sm.service.impl.DepartmentServiceImpl;
 
 /**
@@ -17,5 +19,8 @@ public class ServiceFactory {
     }
     public static DepartmentService getDepartmentServiceInstance(){
         return new DepartmentServiceImpl();
+    }
+    public static ClazzService getClazzServiceInstance(){
+        return new ClazzServiceImpl();
     }
 }

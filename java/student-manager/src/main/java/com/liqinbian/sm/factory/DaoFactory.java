@@ -1,8 +1,10 @@
 package com.liqinbian.sm.factory;
 
 import com.liqinbian.sm.dao.AdminDao;
+import com.liqinbian.sm.dao.ClazzDao;
 import com.liqinbian.sm.dao.DepartmentDao;
 import com.liqinbian.sm.dao.impl.AdminDaoImpl;
+import com.liqinbian.sm.dao.impl.ClazzDaoImpl;
 import com.liqinbian.sm.dao.impl.DepartmentDaoImpl;
 import com.liqinbian.sm.entity.Admin;
 
@@ -30,5 +32,13 @@ public class DaoFactory {
      */
     public static DepartmentDao getDepartmentDaoInstance(){
         return new DepartmentDaoImpl();
+    }
+    /**
+     * 获得ClazzDao实例
+     *
+     * @return ClazzDao实例
+     */
+    public static ClazzDao getClazzDaoInstance(){
+        return new ClazzDaoImpl();
     }
 }
