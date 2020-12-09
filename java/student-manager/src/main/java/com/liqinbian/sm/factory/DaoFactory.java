@@ -3,9 +3,11 @@ package com.liqinbian.sm.factory;
 import com.liqinbian.sm.dao.AdminDao;
 import com.liqinbian.sm.dao.ClazzDao;
 import com.liqinbian.sm.dao.DepartmentDao;
+import com.liqinbian.sm.dao.StudentDao;
 import com.liqinbian.sm.dao.impl.AdminDaoImpl;
 import com.liqinbian.sm.dao.impl.ClazzDaoImpl;
 import com.liqinbian.sm.dao.impl.DepartmentDaoImpl;
+import com.liqinbian.sm.dao.impl.StudentDaoImpl;
 import com.liqinbian.sm.entity.Admin;
 
 import java.sql.SQLException;
@@ -41,4 +43,7 @@ public class DaoFactory {
     public static ClazzDao getClazzDaoInstance(){
         return new ClazzDaoImpl();
     }
-}
+    public static StudentDao getStudentDaoInstance(){
+        return new StudentDaoImpl();
+        }
+    }

@@ -11,7 +11,7 @@ import java.sql.SQLException;
 
 /**
  * @ClassName AdminDaolmpl
- * @Description TODO
+ * @Description 实现类
  * @Author huachengyu
  * @Date 2020/11/16
  **/
@@ -38,7 +38,7 @@ public class AdminDaoImpl implements AdminDao {
       }
       rs.close();
       pstmt.close();
-      jdbcUtil.closeConnect();
+      jdbcUtil.closeConnection();
       return admin;
       }
   }

@@ -25,7 +25,7 @@ public class DepartmentServiceImpl implements DepartmentService {
         try {
             departmentList = departmentDao.getAll();
         }catch (SQLException e){
-            System.out.print("查询院系信息出现异常");
+            System.err.print("查询院系信息出现异常");
         }
         return departmentList;
     }

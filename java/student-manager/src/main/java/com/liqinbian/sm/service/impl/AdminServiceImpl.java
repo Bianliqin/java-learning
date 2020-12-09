@@ -33,6 +33,7 @@ public class AdminServiceImpl implements AdminService {
 
         //根据账号查找到了记录
         if(admin !=null){
+            //System.out.println(DigestUtils.md5Hex(password));
             //比较密码，此时需要将客户端传过来的密码进行MD5加密后才能比对
             if (DigestUtils.md5Hex(password).equals(admin.getPassword())){
                 resultEntity = ResultEntity.builder().code(0).message("登录成功").data(admin).build();

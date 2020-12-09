@@ -13,4 +13,10 @@ import java.util.List;
  * @Author huachengyu
  * @Date 2020/11/23
  **/
-
+public class ClazzServiceTest{
+    @Test
+    public void getClazzByDepId(){
+        List<Clazz>list = ServiceFactory.getClazzServiceInstance().getClazzByDepId(5);
+        list.forEach(System.out::println);
+    }
+}

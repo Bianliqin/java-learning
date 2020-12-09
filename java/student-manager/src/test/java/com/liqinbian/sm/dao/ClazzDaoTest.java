@@ -25,4 +25,14 @@ public class ClazzDaoTest {
        }
        System.out.println(clazzList);
    }
+   @Test
+    public void testSelectByDepartmentId() throws Exception{
+       List<Clazz> clazzList = clazzDao.selectByDepartmentId(5);
+       System.out.println(clazzList);
+   }
+   @Test
+    public void selectAll() throws Exception{
+       List<Clazz> clazzList = clazzDao.selectAll();
+       System.out.println(clazzList);
+   }
 }

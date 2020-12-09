@@ -11,12 +11,13 @@ import java.sql.SQLException;
  * @Date 2020/11/16
  **/
 public class JdbcUtil {
-    private static final String URL ="jdbc:mysql://127.0.0.1:3306/student_manager?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=GMT%2B8";
+    private static final String URL = "jdbc:mysql://127.0.0.1:3306/student_manager?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=GMT%2B8";
 
     private static final String USERNAME = "root";
     private static final String PASSWORD = "173026";
     private static Connection connection = null;
     private static JdbcUtil jdbcUtil = null;
+
     /**
      * 获得JDBCUtil实例
      *
@@ -65,11 +66,11 @@ public class JdbcUtil {
     /**
      * 关闭连接
      */
-    public void closeConnect(){
-        if(connection !=null){
-            try{
+    public void closeConnect() {
+        if (connection != null) {
+            try {
                 connection.close();
-            }catch (SQLException e){
+            } catch (SQLException e) {
                 System.out.println(e.getMessage());
             }
         }
@@ -81,5 +82,18 @@ public class JdbcUtil {
             System.out.println("连接成功");
         }
     }
+    /**
+     * 关闭连接
+     */
+    public void closeConnection() {
+        if (connection != null) {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+    }
 }
+
 
